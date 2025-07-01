@@ -82,7 +82,7 @@ const Index = () => {
           <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">
             Trusted by 1000+ Kenyan Builders
           </Badge>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Build Your Dream Home with
             <span className="text-blue-600 block">AI-Powered Precision</span>
           </h1>
