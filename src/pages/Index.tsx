@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building2, Calculator, FileText, Cube, Download, Users, CheckCircle, ArrowRight } from "lucide-react";
+import { Building2, Calculator, FileText, Box, Download, Users, CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -23,7 +23,7 @@ const Index = () => {
       description: "Generate detailed material schedules and cost breakdowns in downloadable formats"
     },
     {
-      icon: Cube,
+      icon: Box,
       title: "3D Visualization",
       description: "View your designs in stunning 3D models with our web-based viewer"
     }
