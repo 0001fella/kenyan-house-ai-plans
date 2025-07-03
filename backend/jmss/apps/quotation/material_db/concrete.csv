@@ -1,0 +1,7 @@
+
+material_id,name,category,unit,base_price,supplier_id,location
+C001,Concrete Grade 25,concrete,m3,8500,SUP001,Nairobi
+C002,Concrete Grade 30,concrete,m3,9200,SUP001,Nairobi
+C003,Concrete Grade 35,concrete,m3,10000,SUP001,Nairobi
+C004,Ready Mix Concrete 25,concrete,m3,8800,SUP002,Nakuru
+C005,Ready Mix Concrete 30,concrete,m3,9500,SUP002,Nakuru

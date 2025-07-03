@@ -1,0 +1,9 @@
+
+material_id,name,category,unit,base_price,supplier_id,location
+S001,Steel Reinforcement Y8,steel,kg,82,SUP002,Nakuru
+S002,Steel Reinforcement Y10,steel,kg,83,SUP002,Nakuru
+S003,Steel Reinforcement Y12,steel,kg,85,SUP002,Nakuru
+S004,Steel Reinforcement Y16,steel,kg,87,SUP002,Nakuru
+S005,Steel Reinforcement Y20,steel,kg,90,SUP002,Nakuru
+S006,Mild Steel Plates 6mm,steel,kg,95,SUP003,Mombasa
+S007,Mild Steel Plates 8mm,steel,kg,98,SUP003,Mombasa
