@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,7 @@ import {
   Eye, 
   Download, 
   FileText, 
-  Cube,
+  Box,
   RotateCcw,
   ZoomIn,
   Settings,
@@ -139,7 +138,7 @@ const PreviewPanel = ({ selectedDesign, userRole, onExportIFC, onViewBudget }: P
               </div>
               <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg h-80 flex items-center justify-center">
                 <div className="text-center">
-                  <Cube className="h-16 w-16 text-blue-500 mx-auto mb-4" />
+                  <Box className="h-16 w-16 text-blue-500 mx-auto mb-4" />
                   <p className="text-blue-700 font-medium">3D Visualization</p>
                   <p className="text-sm text-blue-600 mt-2 mb-4">
                     {userRole === "Homeowner" ? "Upgrade to Pro to unlock 3D models" : "3D Model Ready"}
