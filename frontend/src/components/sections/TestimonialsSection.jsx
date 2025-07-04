@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-r from-blue-600 to-purple-600 text-white relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-gradient-to-r from-primary to-accent text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
