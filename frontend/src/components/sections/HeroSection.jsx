@@ -10,65 +10,52 @@ import {
   TrendingUp,
   Layers,
   MousePointer,
-  Sparkles
+  Sparkles,
+  Building2
 } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative py-24 lg:py-32">
-      <div className="container mx-auto px-4 text-center">
-        <div className="mb-8">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full border border-primary/20 mb-6">
-            <TrendingUp className="h-4 w-4 text-primary mr-2" />
-            <span className="text-sm font-medium text-primary">Trusted by 500+ Projects Across Kenya</span>
+    <section className="bg-gradient-to-br from-secondary to-background py-20 lg:py-32">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col lg:flex-row items-center">
+          {/* Content */}
+          <div className="lg:w-1/2 lg:pr-12">
+            <div className="inline-flex items-center px-3 py-1 bg-primary/10 rounded-full mb-6">
+              <span className="text-sm font-medium text-primary uppercase tracking-wide">
+                🔥 CONSTRUCTION MANAGEMENT SOFTWARE
+              </span>
+            </div>
+            
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+              Together, we can build it all
+            </h1>
+            
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
+              Manage your construction projects from preconstruction to closeout with the insights you need to maximize safety, efficiency, and return.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-medium">
+                See pricing
+              </Button>
+              <Button variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background px-8 py-3 text-lg font-medium">
+                See it in action →
+              </Button>
+            </div>
           </div>
-        </div>
-        
-        <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-          <span className="bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Make Construction
-          </span>
-          <br />
-          <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent relative">
-            Easy & Precise
-            <div className="absolute -top-4 -right-8 text-2xl animate-bounce">🚀</div>
-          </span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-          Revolutionary AI-powered construction planning software that transforms complex engineering calculations 
-          into simple, accurate solutions for Kenya's building industry.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-          <Link to="/design-input">
-            <Button size="lg" className="px-12 py-4 text-lg bg-gradient-to-r from-primary to-accent hover:shadow-lg text-primary-foreground shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 group">
-              <MousePointer className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform" />
-              Start Your Project
-              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-          <Link to="/dashboard">
-            <Button variant="outline" size="lg" className="px-12 py-4 text-lg border-2 border-primary hover:border-accent hover:bg-primary/5 transition-all transform hover:scale-105">
-              <Layers className="mr-3 h-6 w-6" />
-              View Dashboard
-            </Button>
-          </Link>
-        </div>
 
-        {/* Trust Indicators */}
-        <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Shield className="h-4 w-4 text-primary" />
-            <span>ISO 9001 Certified</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Award className="h-4 w-4 text-accent" />
-            <span>Kenya Building Code Compliant</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <CheckCircle className="h-4 w-4 text-primary" />
-            <span>24/7 Support</span>
+          {/* Hero Image/Video Area */}
+          <div className="lg:w-1/2 mt-12 lg:mt-0">
+            <div className="relative bg-gradient-to-br from-muted to-secondary rounded-2xl p-8 shadow-2xl">
+              <div className="aspect-video bg-foreground/5 rounded-xl flex items-center justify-center">
+                <div className="text-center">
+                  <Building2 className="h-16 w-16 text-primary mx-auto mb-4" />
+                  <p className="text-muted-foreground">Construction Management Dashboard</p>
+                  <p className="text-sm text-muted-foreground mt-2">AI-Powered Project Insights</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

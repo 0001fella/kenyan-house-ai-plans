@@ -8,25 +8,25 @@ All colors MUST be HSL.
 
 @layer base {
 :root {
-    --background: 248 250 252;
-    --foreground: 222.2 84% 4.9%;
+    --background: 255 255 255;
+    --foreground: 15 17 23;
 
     --card: 255 255 255;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 15 17 23;
 
     --popover: 255 255 255;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 15 17 23;
 
-    --primary: 258 78% 60%;
+    --primary: 16 82% 51%;
     --primary-foreground: 255 255 255;
 
-    --secondary: 250 244 255;
-    --secondary-foreground: 258 78% 60%;
+    --secondary: 240 246 252;
+    --secondary-foreground: 71 84% 12%;
 
-    --muted: 248 250 252;
-    --muted-foreground: 100 7% 23%;
+    --muted: 246 248 250;
+    --muted-foreground: 71 5% 45%;
 
-    --accent: 238 87% 67%;
+    --accent: 16 82% 51%;
     --accent-foreground: 255 255 255;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,15 +36,15 @@ All colors MUST be HSL.
     --input: 229 84% 95%;
     --ring: 258 78% 60%;
 
-    /* Custom gradients for MIE theme */
-    --gradient-primary: linear-gradient(135deg, 258 78% 60%, 238 87% 67%);
-    --gradient-secondary: linear-gradient(135deg, 248 250 252, 238 87% 67% / 0.1);
-    --gradient-dark: linear-gradient(135deg, 222.2 84% 4.9%, 258 78% 60%);
+    /* Professional construction theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(16 82% 51%), hsl(14 90% 53%));
+    --gradient-secondary: linear-gradient(135deg, hsl(240 246 252), hsl(246 248 250));
+    --gradient-hero: linear-gradient(135deg, hsl(240 246 252), hsl(246 248 250));
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(258 78% 60% / 0.1);
-    --shadow-medium: 0 8px 30px hsl(258 78% 60% / 0.15);
-    --shadow-strong: 0 20px 60px hsl(258 78% 60% / 0.25);
+    /* Professional shadows */
+    --shadow-soft: 0 2px 8px hsl(15 17 23 / 0.08);
+    --shadow-medium: 0 4px 16px hsl(15 17 23 / 0.12);
+    --shadow-strong: 0 8px 32px hsl(15 17 23 / 0.16);
 
     --radius: 0.5rem;
 
