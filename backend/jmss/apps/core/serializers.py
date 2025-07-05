@@ -78,8 +78,24 @@ class AiModelSerializer(serializers.ModelSerializer):
         model = AiModel
         fields = '__all__'
 
+class QuotationItemSerializer(serializers.ModelSerializer):
+    supplier = SupplierSerializer(read_only=True)
+    
+    class Meta:
+        model = QuotationItem
+        fields = '__all__'
+
+class TransportCostSerializer(serializers.ModelSerializer):
+    item = QuotationItemSerializer(read_only=True)
+    
+    class Meta:
+        model = TransportCost
+        fields = '__all__'
+
 class QuotationSerializer(serializers.ModelSerializer):
     project = ProjectSerializer(read_only=True)
+    items = QuotationItemSerializer(many=True, read_only=True)
+    transport_costs = TransportCostSerializer(many=True, read_only=True)
     
     class Meta:
         model = Quotation

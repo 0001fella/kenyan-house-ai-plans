@@ -1,0 +1,67 @@
+{
+  "model_name": "KenyanConstructionQuotationEngine",
+  "version": "2.0.0",
+  "description": "AI-powered quotation engine for construction projects in Kenya with material sourcing and transport optimization",
+  "architecture": {
+    "type": "Ensemble",
+    "components": [
+      "material_classifier",
+      "quantity_estimator", 
+      "price_predictor",
+      "transport_optimizer"
+    ]
+  },
+  "material_database": {
+    "categories": [
+      "concrete",
+      "steel",
+      "timber",
+      "blocks",
+      "roofing",
+      "finishing",
+      "electrical",
+      "plumbing",
+      "hardware"
+    ],
+    "suppliers": {
+      "nairobi": ["SUP001", "SUP002", "SUP003"],
+      "mombasa": ["SUP004", "SUP005"],
+      "nakuru": ["SUP006", "SUP007"],
+      "kisumu": ["SUP008", "SUP009"],
+      "eldoret": ["SUP010"]
+    }
+  },
+  "pricing_model": {
+    "base_prices": true,
+    "location_factors": true,
+    "seasonal_adjustments": true,
+    "supplier_margins": true,
+    "transport_costs": true
+  },
+  "transport_optimization": {
+    "distance_matrix": true,
+    "fuel_costs": 150.0,
+    "vehicle_capacity": {
+      "small_truck": 5000,
+      "medium_truck": 10000,
+      "large_truck": 20000
+    },
+    "cost_per_km": {
+      "small_truck": 80,
+      "medium_truck": 120,
+      "large_truck": 180
+    }
+  },
+  "output_format": {
+    "detailed_boq": true,
+    "supplier_comparison": true,
+    "transport_breakdown": true,
+    "payment_schedule": true,
+    "variance_analysis": true
+  },
+  "deployment": {
+    "device": "cpu",
+    "inference_timeout": 60,
+    "max_concurrent_requests": 20
+  }
+}

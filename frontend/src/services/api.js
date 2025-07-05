@@ -109,10 +109,10 @@ class ApiService {
   }
 
   // Quotations
-  async generateQuotation(projectId, designId) {
-    return this.request('/quotations/generate/', {
+  async generateQuotation(projectId, quotationData) {
+    return this.request(`/projects/${projectId}/generate_quotation/`, {
       method: 'POST',
-      body: JSON.stringify({ project_id: projectId, design_id: designId }),
+      body: JSON.stringify(quotationData),
     });
   }
 
